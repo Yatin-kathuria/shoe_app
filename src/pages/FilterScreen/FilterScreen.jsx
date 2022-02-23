@@ -96,6 +96,7 @@ const FilterScreen = () => {
           <SearchBar
             value={searchValue}
             onChange={(e) => setSearchValue(e.target.value)}
+            placeholder='Search'
           />
         </div>
       </header>
@@ -113,6 +114,7 @@ const FilterScreen = () => {
               ))}
             </div>
           </Accordian>
+          <div>{/* <Slider /> */}</div>
           <div className={styles.size_title}>Sizes</div>
           <div className={styles.size_container}>
             {sizes.map((s) => (
