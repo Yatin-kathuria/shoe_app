@@ -79,7 +79,7 @@ const FilterScreen = () => {
 
   const handleToggleSize = (value) => {
     const index = checkedSizes.findIndex((s) => s === value);
-    if (index == -1) {
+    if (index === -1) {
       checkedSizes.push(value);
     } else {
       checkedSizes.splice(index, 1);
