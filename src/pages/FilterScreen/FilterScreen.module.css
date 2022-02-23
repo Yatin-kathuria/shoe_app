@@ -67,3 +67,10 @@
   border: 1px solid rgba(0, 0, 0, 0.3);
   background-color: aliceblue;
 }
+
+.size_title {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: start;
+  padding: 10px;
+}

@@ -113,6 +113,7 @@ const FilterScreen = () => {
               ))}
             </div>
           </Accordian>
+          <div className={styles.size_title}>Sizes</div>
           <div className={styles.size_container}>
             {sizes.map((s) => (
               <div
