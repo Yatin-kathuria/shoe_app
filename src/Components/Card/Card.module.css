@@ -1,0 +1,66 @@
+.main {
+  width: 220px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.header {
+  text-align: start;
+  margin-top: 1rem;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 40px;
+  background-color: red;
+  left: -4px;
+}
+
+.description {
+  color: #878787;
+  font-size: 12px;
+}
+
+.brand {
+  font-weight: bold;
+}
+
+.shoes_img {
+  width: 200px;
+  height: 150px;
+  margin: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  color: #878787;
+  font-size: 12px;
+  text-align: start;
+}
+
+.amount {
+  font-weight: bold;
+  text-align: start;
+}
+
+.size {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+
+.mini_card {
+  width: 25px;
+  height: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}

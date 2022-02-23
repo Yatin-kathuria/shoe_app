@@ -1,0 +1,165 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.card h2 {
+  margin-bottom: 40px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.card .current_value {
+  width: 100%;
+}
+.card .current_value label {
+  display: inline-flex;
+  width: 50px;
+  font-size: 20px;
+}
+.card .current_value input {
+  margin: 0;
+  max-width: 40px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: white;
+  padding: 5px;
+  padding-left: 15px;
+  border: none;
+  border-radius: 20px;
+  background: #274684;
+}
+.card .values {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  width: 240px;
+}
+.card #slider {
+  position: relative;
+  margin: 0 auto;
+  width: 240px;
+  height: 5px;
+  background: #709fdc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.card #slider #min {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 0;
+  height: 5px;
+  border-radius: 5px;
+  background: #709fdc;
+}
+.card #slider #min:hover::before {
+  opacity: 1;
+}
+.card #slider #min:hover::after {
+  opacity: 1;
+}
+.card #slider #min::before {
+  opacity: 0;
+  content: attr(data-content);
+  display: block;
+  position: absolute;
+  top: -40px;
+  right: -23px;
+  width: 40px;
+  padding: 3px;
+  text-align: center;
+  color: white;
+  background: #274684;
+  border-radius: 20px;
+}
+.card #slider #min::after {
+  opacity: 0;
+  content: '';
+  display: block;
+  position: absolute;
+  top: -18px;
+  right: -8px;
+  border-top: 8px solid #274684;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+.card #slider #min #min-drag {
+  position: absolute;
+  right: -7.5px;
+  top: -5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #071739;
+  transition: all 0.3s;
+}
+.card #slider #min #min-drag:hover {
+  box-shadow: 0 0 0 6px rgba(39, 70, 132, 0.2);
+}
+.card #slider #max {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 0;
+  height: 5px;
+  border-radius: 5px;
+  background: #274684;
+}
+.card #slider #max:hover::before {
+  opacity: 1;
+}
+.card #slider #max:hover::after {
+  opacity: 1;
+}
+.card #slider #max::before {
+  opacity: 0;
+  content: attr(data-content);
+  display: block;
+  position: absolute;
+  top: -40px;
+  right: -23px;
+  width: 40px;
+  padding: 3px;
+  text-align: center;
+  color: white;
+  background: #274684;
+  border-radius: 20px;
+}
+.card #slider #max::after {
+  opacity: 0;
+  content: '';
+  display: block;
+  position: absolute;
+  top: -18px;
+  right: -8px;
+  border-top: 8px solid #274684;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+.card #slider #max #max-drag {
+  position: absolute;
+  right: -7.5px;
+  top: -5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #071739;
+  transition: all 0.3s;
+}
+.card #slider #max #max-drag:hover {
+  box-shadow: 0 0 0 6px rgba(39, 70, 132, 0.2);
+}
+
+.card input[type='number']::-webkit-outer-spin-button,
+.card input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.card input[type='number'] {
+  -moz-appearance: textfield;
+}

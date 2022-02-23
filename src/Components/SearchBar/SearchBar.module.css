@@ -1,0 +1,19 @@
+.container {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
